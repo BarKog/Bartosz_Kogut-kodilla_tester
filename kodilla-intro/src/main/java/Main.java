@@ -5,5 +5,7 @@ public class Main {
         double height = 1.81;
         char carClass = 'A';
         boolean isGoodProgrammer = true;
+        System.out.println(myName);
+        System.out.println(carClass);
     }
 }
