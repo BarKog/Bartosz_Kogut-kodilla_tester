@@ -12,5 +12,14 @@ public class SimpleArray {
 
         System.out.println(arrayc3);
 
-        System.out.println(animals[0]);
+        System.out.println(animals[3]);
+
+        int numberOfElements = animals.length;
+
+        System.out.println("Konsola posiada następującą liczbę elementów:");
+        System.out.println(numberOfElements);
+
+
+
+
     }}
