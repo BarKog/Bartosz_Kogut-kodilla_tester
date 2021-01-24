@@ -20,5 +20,6 @@ public class Application {
 
     public static void main(String[] args) {
         Application application = new Application("Adam", 40, 178);
+        application.checkAgeHeight();
     }
 }
