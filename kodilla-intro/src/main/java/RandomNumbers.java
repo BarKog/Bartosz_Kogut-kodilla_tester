@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class RandomNumbers {
 
-    private List<Integer> drawnNumbers = new ArrayList();
+    private List<Integer> givenNumbers = new ArrayList();
     public static void main(String[] args) {
         RandomNumbers randomNumbers = new RandomNumbers();
         randomNumbers.getCountOfRandomNumber();
@@ -18,26 +18,26 @@ public class RandomNumbers {
         int sum = 0;
         while (sum < 5000) {
             int temp = random.nextInt(31);
-            drawnNumbers.add(temp);
+            givenNumbers.add(temp);
             sum = sum + temp;
             result++;
         }
         return result;
     }
     public int getMaxNumber() {
-        int max = drawnNumbers.get(0);
-        for (int i = 0 ; i < drawnNumbers.size(); i++) {
-            if (drawnNumbers.get(i) > max) {
-                max = drawnNumbers.get(i);
+        int max = givenNumbers.get(0);
+        for (int i = 0 ; i < givenNumbers.size(); i++) {
+            if (givenNumbers.get(i) > max) {
+                max = givenNumbers.get(i);
             }
         }
         return max;
     }
     public int getMinNumber() {
-        int min = drawnNumbers.get(0);
-        for (int i = 0; i < drawnNumbers.size(); i++) {
-            if (drawnNumbers.get(i) < min) {
-                min = drawnNumbers.get(i);
+        int min = givenNumbers.get(0);
+        for (int i = 0; i < givenNumbers.size(); i++) {
+            if (givenNumbers.get(i) < min) {
+                min = givenNumbers.get(i);
             }
         }
         return min;
