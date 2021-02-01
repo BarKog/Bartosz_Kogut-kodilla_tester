@@ -15,6 +15,7 @@ public class SwitchInstruction {
             String colour = scanner.nextLine().trim().toUpperCase();
             Switch myColour = Switch.R;
 
+
             switch(myColour) {
                 case R:
                     System.out.println("Red");
@@ -32,7 +33,5 @@ public class SwitchInstruction {
                     System.out.println("Wrong letter. Try again.");
             }
         }
-
     }
-
 }
